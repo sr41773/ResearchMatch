@@ -1,0 +1,126 @@
+/* Add this to your existing App.css file */
+
+/* About page */
+.about-page {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .about-page-container {
+    flex: 1;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/UGAHomePage.png");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-page h1 {
+    color: #BA0C2F;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 3px solid #BA0C2F;
+    padding-bottom: 10px;
+  }
+  
+  .about-page p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .about-page strong {
+    color: #BA0C2F;
+    font-weight: 700;
+  }
+  
+  .about-page ul {
+    margin: 25px 0;
+    padding-left: 24px;
+  }
+  
+  .about-page li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    position: relative;
+  }
+  
+  .about-page li::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #BA0C2F;
+    border-radius: 50%;
+  }
+  
+  .team-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #eee;
+  }
+  
+  .team-section p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .back-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: #BA0C2F;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(186, 12, 47, 0.3);
+  }
+  
+  .back-button:hover {
+    background-color: #9a0b28;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(186, 12, 47, 0.4);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 25px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .about-page h1 {
+      font-size: 28px;
+    }
+    
+    .team-section p {
+      font-size: 16px;
+    }
+  }
